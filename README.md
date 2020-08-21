@@ -1,5 +1,5 @@
 # isOpen
-Checks If There Is An Open Class at CSULB And Texts You When One Opens Up
+Checks if there is an open class at CSULB and texts you when one opens up.
 ## Dependencies
 selenium
 ```
