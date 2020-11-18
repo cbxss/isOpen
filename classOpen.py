@@ -27,7 +27,7 @@ while i:
     if "The search returns no results that match the criteria specified." in driver.page_source:
         print("classes full")
         time.sleep(900) #15 mins
-        driver.get('https://cmsweb.cms.csulb.edu/psc/CLBPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&Action=A&ACAD_CAREER=UGRD&EMPLID=017636084&INSTITUTION=LBCMP&STRM=2204')
+        driver.get('https://cmsweb.cms.csulb.edu/psc/CLBPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&Action=A&ACAD_CAREER=UGRD&EMPLID=017636084&INSTITUTION=LBCMP&STRM=2212')
         time.sleep(2)
         onPage()
     else:
