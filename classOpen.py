@@ -5,10 +5,10 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.chrome.options import Options
 import config
 options = Options()
-options.add_argument('--headless')    #comment this out if you want to see it in action
+#options.add_argument('--headless')    #comment this out if you want to see it in action
 client = Client(config.account_sid, config.auth_token)
 driver = webdriver.Chrome('./chromedriver', options=options)
-driver.get('https://cmsweb.cms.csulb.edu/psc/CLBPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&Action=A&ACAD_CAREER=UGRD&EMPLID=017636084&INSTITUTION=LBCMP&STRM=2204')
+driver.get('https://cmsweb.cms.csulb.edu/psc/CLBPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_CART.GBL?Page=SSR_SSENRL_CART&Action=A&ACAD_CAREER=UGRD&EMPLID=017636084&INSTITUTION=LBCMP&STRM=2212')
 driver.find_element_by_id("userid").send_keys(config.username)
 driver.find_element_by_id("pwd").send_keys(config.password)
 driver.find_element_by_name("Submit").click()
