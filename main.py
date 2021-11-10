@@ -2,11 +2,14 @@ import random
 import time
 import requests
 
-college = "MAE"
-course = "452"
-hook = ''
-cookie = ''
-url = "https://csulb.collegescheduler.com/api/terms/Fall%202021/subjects/" + college + "/courses/" + course + "/regblocks"
+college = "CECS"
+course = "100"
+hook = '' #discord webhook
+cookie = '' #csulb cookie
+year = '2022'
+
+#Change to Spring or Fall accordingly 
+url = "https://csulb.collegescheduler.com/api/terms/Spring%20"+year+"/subjects/" + college + "/courses/" + course + "/regblocks"
 
 
 def request():

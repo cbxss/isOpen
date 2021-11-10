@@ -5,13 +5,14 @@ import random
 
 college = "MAE"
 courses = ["452", "440", "453", "451"]
-hook = ''
-cookie = ''
-
+hook = '' #discord webhook
+cookie = '' #csulb cookie
+year = '2022'
 
 def request(course):
     print("Request " + course)
-    url = "https://csulb.collegescheduler.com/api/terms/Fall%202021/subjects/" + college + "/courses/" + course + "/regblocks"
+    #Change to Spring or Fall accordingly
+    url = "https://csulb.collegescheduler.com/api/terms/Spring%20"+year+"/subjects/" + college + "/courses/" + course + "/regblocks"
     payload = {}
     headers = {
         'authority': 'csulb.collegescheduler.com',
